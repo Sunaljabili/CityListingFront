@@ -1,0 +1,56 @@
+#intro {
+  background-image: url("../img/slider/slider-img.jpg");
+  position: relative;
+}
+
+#intro::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 1, 2, 0.4);
+}
+
+#intro .slogan {
+  padding: 280px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#intro .slogan h4 {
+  color: #31ff7a;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-family: 'Sacremento',cursive;
+  display: block;
+}
+
+#intro .slogan h1 {
+  color: #fff;
+  font-size: 78px;
+}
+
+#intro .slogan .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 50px;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+#intro .slogan .search-box .inpt-grb input {
+  width: 45%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

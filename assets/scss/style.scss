@@ -1,0 +1,10 @@
+//Global SCSS
+@import "shared/mixings";
+@import "shared/variable";
+
+//Components SCSS
+@import "components/header";
+@import "components/footer";
+
+//Pages SCSS
+@import "pages/index";
