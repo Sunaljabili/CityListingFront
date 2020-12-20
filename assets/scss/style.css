@@ -1,3 +1,40 @@
+.header-main {
+  position: relative;
+}
+
+.header-main .img-logo {
+  position: absolute;
+}
+
+.header-main .img-logo a img {
+  position: absolute;
+  right: -40px;
+  top: -10px;
+}
+
+.header-main .collapse ul li {
+  padding: 10px;
+}
+
+.header-main .collapse ul li a {
+  padding: 27px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 500;
+}
+
+.header-main .collapse ul li a:hover {
+  color: #eb566c;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-main .collapse .btn-warning {
+  color: #fff;
+  background-color: #ff3d1c;
+}
+
 #intro {
   background-image: url("../img/slider/slider-img.jpg");
   position: relative;

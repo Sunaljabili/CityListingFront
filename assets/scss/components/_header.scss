@@ -1,0 +1,46 @@
+.header-main{
+position: relative;
+.img-logo{
+   position: absolute;
+a{
+    img{
+        position: absolute;
+        right: -40px;
+       top: -10px;
+    }
+}
+}
+    
+.collapse{
+    ul{
+        li{
+            padding: 10px;
+          
+            a{
+            padding: 27px ;
+            color:$color-white;
+            font-size: $text-font-size;
+            font-family: $primary-font;
+            font-weight: 500;
+            &:hover{
+                color: $color-secondary;
+                transition: 0.5s;
+            }
+            }
+        }
+    }
+    .btn-warning{
+        color: $color-white;
+        background-color: $color-primary;
+    
+        .fa-plus{
+
+        }
+        span{
+
+        }
+    }
+}
+}
+
+
