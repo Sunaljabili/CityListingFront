@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="assets/scss/style.css">
   <title>Document</title>
 </head>
-
+<!-- fixed top  -->
 <body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg  ">
+  <header>    
+    <nav class="navbar  navbar-expand-lg  ">
       <div class="container header-main">
         <div class="img-logo">
           <a class="navbar-brand" href="#">
@@ -25,7 +25,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto"> 
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -48,7 +48,7 @@
           <form class="form-inline ml-5 my-2 my-lg-0">
             <button type="button" class="btn btn-warning">
               <i class="fas fa-plus"></i>
-              <span>add Listing</span> 
+              <span>add Listing</span>
             </button>
           </form>
           <span class="navbar-text ml-5">
@@ -61,26 +61,28 @@
   </header>
 
   <main>
+    <!-- INTRO SECTION START -->
     <section id="intro">
       <div class="container">
         <div class="row">
           <div class="slogan col-lg-11 offset-lg-1">
-             <h4>Explore the city</h4>
-             <h1>Discover Great Places</h1>
-            <form  action="#"  class="search-box">
+            <h4>Explore the city</h4>
+            <h1>Discover Great Places</h1>
+            <form action="#" class="search-box">
               <div class="input-group mb-3 inpt-grb w-50">
                 <input type="text" class="form-control " placeholder=" What are you looking for?">
                 <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      All Catagories
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Catagories One</a>
-                      <a class="dropdown-item" href="#">Catagories Two</a>
-                      <a class="dropdown-item" href="#">Catagories Three</a>
-                      <a class="dropdown-item" href="#">Catagories Four</a>
-                      <a class="dropdown-item" href="#">Catagories Five</a>
-                    </div>
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    All Catagories
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Catagories One</a>
+                    <a class="dropdown-item" href="#">Catagories Two</a>
+                    <a class="dropdown-item" href="#">Catagories Three</a>
+                    <a class="dropdown-item" href="#">Catagories Four</a>
+                    <a class="dropdown-item" href="#">Catagories Five</a>
+                  </div>
                 </div>
                 <span class="input-group-text" id="basic-addon2">Search</span>
               </div>
@@ -89,6 +91,40 @@
         </div>
       </div>
     </section>
+    <!-- INTRO SECTION END -->
+
+    <!-- POPULAR LOCATIONS START -->
+    <section id="popular">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="title text-center">
+              <span>Most visited places</span>
+              <h1>Popular Locations</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="card location">
+              <div class="location-image">
+                <img src="assets/img/gallery/location1.png" alt="">
+              </div>
+              <div class="location-details">
+                <p>NEW YORK</p>
+                <a href="#">
+                  65 
+                  <i class="fas fa-plus"></i>
+                  Location
+                </a>
+              </div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+    </section>
+    <!-- POPULAR LOCATIONS END -->
   </main>
   <footer></footer>
 
@@ -96,11 +132,11 @@
   <script src="https://kit.fontawesome.com/85735e67ff.js" crossorigin="anonymous"></script>
 
   <!-- BOOTSTRAP 4.5.3 VERSION SPECIAL LINK -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
 
-   <!-- JS SCRIPT -->
+  <!-- JS SCRIPT -->
   <script src="assets/js/script.js"></script>
 </body>
 

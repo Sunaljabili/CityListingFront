@@ -30,15 +30,8 @@ a{
         }
     }
     .btn-warning{
-        color: $color-white;
-        background-color: $color-primary;
+       @extend %btn-extend
     
-        .fa-plus{
-
-        }
-        span{
-
-        }
     }
 }
 }

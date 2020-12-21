@@ -1,3 +1,12 @@
+.header-main .collapse .btn-warning {
+  color: #fff;
+  background-color: #ff3d1c;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .header-main {
   position: relative;
 }
@@ -30,9 +39,81 @@
   transition: 0.5s;
 }
 
-.header-main .collapse .btn-warning {
+#popular .title span {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #ff3d1c;
+  display: inline-block;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+}
+
+#popular .title h1 {
+  color: #1c1930;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#popular .location {
+  position: relative;
+}
+
+#popular .location .location-image {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  overflow: hidden;
+}
+
+#popular .location .location-image img {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#popular .location .location-image img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#popular .location .location-details {
+  position: absolute;
+  left: 45px;
+  bottom: -9px;
+}
+
+#popular .location .location-details p {
   color: #fff;
-  background-color: #ff3d1c;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#popular .location .location-details a {
+  text-decoration: none;
+}
+
+#popular .location .location-details a:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 10px;
+}
+
+#popular .location .location-details a {
+  color: #eb566c;
+  background-color: #fff;
+  padding: 10px 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#popular .location .location-details a:hover {
+  color: #fff;
+  background-color: #eb566c;
 }
 
 #intro {
