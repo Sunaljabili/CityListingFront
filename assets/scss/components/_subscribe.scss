@@ -1,0 +1,30 @@
+#subscribe{
+    background-color: royalblue;
+    background-image: url('../img/gallery/section_bg04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 550px;
+    z-index: -1;
+    margin-top: 50px;
+    .title{
+        padding-top: 100px;
+        margin: auto;
+        z-index: 999;
+        position: relative;
+        span{
+            color: $color-title;
+            font-size: $sub-title-font-size;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: $sacremoto-font;
+            display: inline-block;
+        }
+        h1{
+          color: $color-white;
+          font-size: $title-font-size;
+          margin-top: 20px;
+        }
+    }
+}
