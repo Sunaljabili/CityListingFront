@@ -4,14 +4,15 @@
 @import "shared/extend";
 
 //Components SCSS
-@import "components/header";
-@import "components/footer";
-@import "components/popular";
-@import "components/featured";
-@import "components/testimonials";
-@import "components/subscribe";
-
-
+@import"components/header";
+@import"components/footer";
+@import"components/featured";
+@import"components/popular";
+@import"components/subscribe";
+@import"components/testimonials";
+@import "components/ourblog";
+@import"components/offerings";
+@import"components/explore";
 
 //Pages SCSS
 @import "pages/index";

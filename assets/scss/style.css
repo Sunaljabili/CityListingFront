@@ -1,78 +1,105 @@
-#popular .title span {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 22px;
-  color: #ff3d1c;
-  display: inline-block;
-  font-family: "Sacramento", cursive;
-  text-align: center;
+#footer-area {
+  background-image: url("../img/gallery/footer_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
 
-#popular .title h1 {
-  color: #1c1930;
-  font-size: 50px;
-  font-weight: 600;
+#footer-area .footer-content {
+  padding-top: 180px;
 }
 
-#popular .location {
+#footer-area .footer-content .footer-title h3 {
+  color: #fff;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 29px;
+  margin-left: 40px;
+  text-transform: capitalize;
+}
+
+#footer-area .footer-content .footer-title .footer-links {
   position: relative;
 }
 
-#popular .location .location-image {
-  border-radius: 10px;
-  -webkit-transition: -webkit-transform 2s;
-  transition: -webkit-transform 2s;
-  transition: transform 2s;
-  transition: transform 2s, -webkit-transform 2s;
-  overflow: hidden;
+#footer-area .footer-content .footer-title .footer-links li {
+  list-style-type: none;
+  padding-top: 15px;
 }
 
-#popular .location .location-image img {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-#popular .location .location-image img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-#popular .location .location-details {
-  position: absolute;
-  left: 45px;
-  bottom: -9px;
-}
-
-#popular .location .location-details p {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-#popular .location .location-details a {
+#footer-area .footer-content .footer-title .footer-links li a {
   text-decoration: none;
+  color: #57667e;
+  text-transform: capitalize;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-#popular .location .location-details a:hover {
-  opacity: 1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  top: 10px;
-}
-
-#popular .location .location-details a {
+#footer-area .footer-content .footer-title .footer-links li a:hover {
+  margin-left: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   color: #eb566c;
-  background-color: #fff;
-  padding: 10px 25px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
-#popular .location .location-details a:hover {
-  color: #fff;
+#footer-area .footer-content .app-img .download-app1-images {
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+
+#footer-area .footer-content .footer-line {
+  position: relative;
+  margin-top: 25px;
+}
+
+#footer-area .footer-content .footer-line .info-page p {
+  color: #57667e;
+}
+
+#footer-area .footer-content .footer-line .info-page p .fas {
+  color: #eb566c;
+}
+
+#footer-area .footer-content .footer-line .info-page p span {
+  color: #eb566c;
+}
+
+#footer-area .footer-content .footer-line .icons-sosial {
+  position: absolute;
+  right: 50px;
+  top: -5px;
+}
+
+#footer-area .footer-content .footer-line .icons-sosial .border-icon {
+  border: 1px solid #57667e;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer-area .footer-content .footer-line .icons-sosial .border-icon:hover {
   background-color: #eb566c;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  border-color: #fff;
+}
+
+#footer-area .footer-content .footer-line .icons-sosial .border-icon:hover .fab {
+  color: #fff;
+}
+
+#footer-area .footer-content .footer-line .icons-sosial .border-icon .fab {
+  position: absolute;
+  color: #57667e;
+  top: 10px;
+  left: 11px;
+  font-size: 22px;
 }
 
 #featured .title span {
@@ -163,11 +190,150 @@
   margin-bottom: 30px;
   font-size: 16px;
   font-family: "Sulphur Point", sans-serif;
+  color: #57667e;
 }
 
 #featured .section-card .card-body a {
   text-decoration: none;
   color: #10285d;
+}
+
+#popular .title span {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #ff3d1c;
+  display: inline-block;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+}
+
+#popular .title h1 {
+  color: #1c1930;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#popular .location {
+  position: relative;
+}
+
+#popular .location .location-image {
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  overflow: hidden;
+}
+
+#popular .location .location-image img {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#popular .location .location-image img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#popular .location .location-details {
+  position: absolute;
+  left: 45px;
+  bottom: -9px;
+}
+
+#popular .location .location-details p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#popular .location .location-details a {
+  text-decoration: none;
+}
+
+#popular .location .location-details a:hover {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  top: 10px;
+}
+
+#popular .location .location-details a {
+  color: #eb566c;
+  background-color: #fff;
+  padding: 10px 25px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#popular .location .location-details a:hover {
+  color: #fff;
+  background-color: #eb566c;
+}
+
+#subscribe {
+  background-image: url("../img/gallery/section_bg04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 530px;
+  z-index: -1;
+  margin-top: 50px;
+}
+
+#subscribe .title {
+  padding-top: 100px;
+  margin: auto;
+  z-index: 999;
+  position: relative;
+}
+
+#subscribe .title span {
+  color: #31ff7a;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "Sacramento", cursive;
+  display: inline-block;
+}
+
+#subscribe .title h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+#subscribe .input {
+  padding-top: 40px;
+}
+
+#subscribe .input .input-group {
+  margin: auto;
+  height: 70px;
+}
+
+#subscribe .input .input-group .looking {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 30px;
+  height: 100px;
+}
+
+#subscribe .input .send {
+  height: 70px;
+}
+
+#subscribe .input .send .send-btn {
+  background-color: #ff3d1c;
+  color: #fff;
+  border-color: #ff3d1c;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 #testimonials .title span {
@@ -259,38 +425,270 @@
   line-height: 1.5;
 }
 
-#subscribe {
-  background-color: royalblue;
-  background-image: url("../img/gallery/section_bg04.jpg");
+#ourblog .title span {
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #ff3d1c;
+  display: inline-block;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+}
+
+#ourblog .title h1 {
+  color: #1c1930;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#ourblog .card-blog {
+  margin-top: 30px;
+}
+
+#ourblog .card-blog .card-image {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#ourblog .card-blog .card-image img {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#ourblog .card-blog .card-image img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-top-left-radius: 5px;
+}
+
+#ourblog .card-blog .card-title span {
+  color: #ff3d1c;
+  font-size: 14px;
+  margin-bottom: 18px;
+  font-weight: 500;
+  display: block;
+  margin-top: 18px;
+  font-family: "Sulphur Point", sans-serif;
+  text-transform: uppercase;
+}
+
+#ourblog .card-blog .card-title h3 {
+  padding-right: 48px;
+  font-size: 25px;
+  color: #1c1930;
+}
+
+#ourblog .card-blog .card-title h3 a {
+  text-decoration: none;
+  color: #1c1930;
+}
+
+#ourblog .card-blog .card-title p {
+  color: #57667e;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#offering {
+  padding: 0px;
+  margin: 0px;
+}
+
+#offering .single-img .image {
+  margin-left: -15px;
+  width: 670px;
+  height: 950px;
+}
+
+#offering .single-img .image img {
+  width: 100%;
+  height: 100%;
+}
+
+#offering .travel {
+  background-color: #f1f2f6;
+  padding-left: 80px;
+  padding-top: 30px;
+  margin-top: 40px;
+}
+
+#offering .travel .travel-about {
+  position: relative;
+}
+
+#offering .travel .travel-about span {
+  padding-top: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #ff3d1c;
+  display: inline-block;
+  font-family: "Sacramento", cursive;
+}
+
+#offering .travel .travel-about h3 {
+  color: #1c1930;
+  margin-bottom: 39px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 36px;
+  padding-right: 80px;
+}
+
+#offering .travel .travel-about p {
+  margin-bottom: 56px;
+  line-height: 1.6;
+  color: #677294;
+  font-size: 16px;
+  padding-right: 120px;
+}
+
+#offering .travel .travel-categories {
+  padding-bottom: 10px;
+}
+
+#offering .travel .travel-categories .travel-icon .fal {
+  color: #eb566c;
+  font-size: 60px;
+  margin-right: 25px;
+}
+
+#offering .travel .travel-categories .travel-icon .fa-clipboard-list-check {
+  font-size: 68px;
+}
+
+#offering .travel .travel-categories .travel-about h4 {
+  color: #1c1930;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+
+#offering .travel .travel-categories .travel-about p {
+  color: #677294;
+  font-size: 16px;
+}
+
+#explore {
+  background-image: url("../img/gallery/section_bg02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  width: 100%;
   position: relative;
-  min-height: 550px;
-  z-index: -1;
-  margin-top: 50px;
 }
 
-#subscribe .title {
+#explore .title {
   padding-top: 100px;
-  margin: auto;
-  z-index: 999;
-  position: relative;
 }
 
-#subscribe .title span {
+#explore .title span {
   color: #31ff7a;
+  font-family: "Sacramento", cursive;
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
-  font-family: "Sacramento", cursive;
   display: inline-block;
+  margin-bottom: 25px;
 }
 
-#subscribe .title h1 {
+#explore .title h1 {
   color: #fff;
   font-size: 50px;
-  margin-top: 20px;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#explore .services .spinner {
+  position: relative;
+  margin-bottom: 50px;
+  margin-left: 100px;
+}
+
+#explore .services .spinner .circle {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 2px dashed #31ff7a;
+  -webkit-animation: spin 7s linear infinite;
+          animation: spin 7s linear infinite;
+}
+
+#explore .services .spinner .services-icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+#explore .services .spinner .services-icon .far, #explore .services .spinner .services-icon .fas {
+  margin-bottom: 50px;
+  width: 67px;
+  height: 67px;
+  background: #fff;
+  color: #eb566c;
+  font-size: 40px;
+  line-height: 67px;
+  text-align: center;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  top: 7px;
+  left: 8px;
+}
+
+#explore .services .services-text {
+  margin-right: 50px;
+}
+
+#explore .services .services-text h5 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#explore .services .services-text p {
+  display: inline-block;
+  color: #bcbdca;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+#explore img {
+  position: absolute;
+  top: 25px;
+  left: 220px;
 }
 
 #intro {
