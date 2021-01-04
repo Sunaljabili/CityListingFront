@@ -1,5 +1,5 @@
 #explore{
-    background-image: url('../img/gallery/section_bg02.jpg');
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -84,13 +84,35 @@
           font-size: $text-font-size;
           padding-bottom: 50px;
         }
+       }
+       img{
+        position: absolute;
+        top: 25px;
+        left: 220px;
       }
-    }
-     img{
-       position: absolute;
-       top: 25px;
-       left: 220px;
-     }
+      }
+     
    }
    
 
+   @media screen and (max-width:990px){
+
+  }
+  @media screen and (max-width:720px){
+      
+  }
+  
+  @media screen and (max-width:540px){
+      
+  }
+  
+  @media screen and (max-width:320px){
+    #explore{
+      .services{
+        img{
+          display: none;
+        }
+      }
+    }
+  }
+  

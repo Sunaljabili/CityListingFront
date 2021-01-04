@@ -1,14 +1,11 @@
 #footer-area{
     background-image: url('../img/gallery/footer_bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 500px;
    
+    min-height: 650px;
     .footer-content{
         padding-top: 180px;
-       
         .footer-title{
-          
             h3{
                 color: $color-white;
                 font-family: $primary-font;
@@ -23,8 +20,6 @@
                 li{
                     list-style-type: none;
                     padding-top: 15px;
-                  
-                 
                     a{
                         text-decoration: none;
                         color: $color-gray;
@@ -88,7 +83,6 @@
                     color: $color-gray;
                     top: 10px;
                     left: 11px;
-                 
                     font-size: 22px;
                    
                    }
@@ -96,4 +90,12 @@
                }
            }
     }  
+
+}
+
+
+@media screen and (max-width:320px){
+    #footer-area{
+        width: 100%;
+    }
 }

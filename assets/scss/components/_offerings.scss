@@ -6,7 +6,6 @@
     
     .image{
         margin-left: -15px;
-        width: 670px;
         height: 950px;
         img{
           width: 100%;
@@ -45,7 +44,7 @@
             line-height: 1.6;
             color: $color-sub-title;
             font-size: $text-font-size;
-            padding-right: 120px;
+            // padding-right: 120px;
           }
 
       }
@@ -74,5 +73,26 @@
               }
           }
       }
+  }
+}
+
+@media screen and (max-width:990px){
+
+}
+@media screen and (max-width:720px){
+    
+}
+
+@media screen and (max-width:540px){
+    
+}
+
+@media screen and (max-width:320px){
+  #offering{
+    .single-img{
+      .image{
+        width: 320px;
+      }
+    }
   }
 }

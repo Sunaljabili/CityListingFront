@@ -1,8 +1,7 @@
 #footer-area {
   background-image: url("../img/gallery/footer_bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 500px;
+  min-height: 650px;
 }
 
 #footer-area .footer-content {
@@ -100,6 +99,12 @@
   top: 10px;
   left: 11px;
   font-size: 22px;
+}
+
+@media screen and (max-width: 320px) {
+  #footer-area {
+    width: 100%;
+  }
 }
 
 #featured .title span {
@@ -262,7 +267,6 @@
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   position: absolute;
-  left: 20px;
 }
 
 #popular .single-card .location-move .location-city-count a {
@@ -447,10 +451,6 @@
   font-weight: 600;
 }
 
-#ourblog .card-blog {
-  margin-top: 30px;
-}
-
 #ourblog .card-blog .card-image {
   overflow: hidden;
   -webkit-transition: -webkit-transform 2s;
@@ -511,7 +511,6 @@
 
 #offering .single-img .image {
   margin-left: -15px;
-  width: 670px;
   height: 950px;
 }
 
@@ -556,7 +555,6 @@
   line-height: 1.6;
   color: #677294;
   font-size: 16px;
-  padding-right: 120px;
 }
 
 #offering .travel .travel-categories {
@@ -585,8 +583,13 @@
   font-size: 16px;
 }
 
+@media screen and (max-width: 320px) {
+  #offering .single-img .image {
+    width: 320px;
+  }
+}
+
 #explore {
-  background-image: url("../img/gallery/section_bg02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -690,10 +693,16 @@
   padding-bottom: 50px;
 }
 
-#explore img {
+#explore .services img {
   position: absolute;
   top: 25px;
   left: 220px;
+}
+
+@media screen and (max-width: 320px) {
+  #explore .services img {
+    display: none;
+  }
 }
 
 #get_in_touch .send_form .button-contact .btn {
@@ -835,5 +844,11 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   position: relative;
+}
+
+@media screen and (max-width: 320px) {
+  #intro::after {
+    width: 320px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
