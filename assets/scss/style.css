@@ -749,6 +749,38 @@
   margin-left: 75px;
 }
 
+#ourcompany .company-about .company-title h3 {
+  color: #ff3d1c;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  display: inline-block;
+  font-family: "Sacramento", cursive;
+}
+
+#ourcompany .company-about .company-text p {
+  font-size: 36px;
+  display: block;
+  color: #1c1930;
+  font-weight: 400;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+#ourcompany .company-mission h5 {
+  color: #1c1930;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 600;
+}
+
+#ourcompany .company-mission p {
+  font-family: "Sulphur Point",sans-serif;
+  color: #10285d;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
 #intro {
   background-image: url("../img/slider/slider-img.jpg");
   position: relative;
