@@ -1,7 +1,5 @@
 #popular{
-  
     .title{
-       
         span{
             font-size: 30px;
             font-weight: 700;
@@ -10,7 +8,6 @@
             display: inline-block;
             font-family:$sacremoto-font;
             text-align: center;
-           
         }
         h1{
             color: $color-black;
@@ -18,52 +15,68 @@
             font-weight: 600;
         }
     }
-    .location{
-        position: relative;
-       
-        .location-image{
-            border-radius: 10px;
-            transition:transform 2s;
-            overflow: hidden;
-            img{
-                transition: all 2s;
-             &:hover{
-                transform: scale(1.2);
-             }
+   .single-card{
+       position: relative;
+       &:hover .location-city-count{
+            transform: scaleY(1.2);
+            transition: 2s;
+        
+       }
+       .image-card{
+           overflow: hidden;
+           border-top-left-radius: 8px;
+           border-top-right-radius: 8px;
+           border-bottom-left-radius: 8px;
+           border-bottom-right-radius: 8px;
+           img{
+            transition: all 2s;
+            &:hover{
+                transform: scale(1.1);
+                transition: 2s;
             }
-        }
-        .location-details{
-            position: absolute;
-            left: 45px;
-            bottom: -9px;
-            p{
-               color:$color-white;
-               font-size: $sub-title-font-size;
-               font-weight: 700;
-            }
-            a{
-                @extend %btn-location-extend;
-                text-decoration: none;
-                &:hover{
-                    opacity: 1;
-                    transition: 0.5s;
-                    top: 10px;
-                }
-            }
-        }
-    }
+           }
+       }
+       .location-country{
+           h1{
+                 position: absolute;
+                 bottom: 20px;
+                 left: 20px;
+                 color: $color-white;
+
+           }
+          
+       }
+       .location-move{
+          transform: scaleY(0);
+          .location-city-count{
+            display: inline-block;
+          
+           transform-origin: bottom;
+           position: absolute;
+           left: 20px;
+           @extend %btn-location-extend;
+              a{
+                  text-decoration: none;
+                  color: $color-white;
+                 
+                  .fal{}
+                  span{
+
+                  }
+              } 
+    } 
+       }
+    
+   }
 }
 
 %btn-location-extend{
-    color: $color-secondary;
-    background-color: $color-white;
-    padding: 10px 25px;
+    color: $color-white;
+    background-color:  $color-secondary;
+    padding: 8px 18px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius:15px;
-    &:hover{
-        color: $color-white;
-        background-color: $color-secondary;
-    }
+    
 }
