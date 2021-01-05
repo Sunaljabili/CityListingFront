@@ -30,12 +30,12 @@
         padding-top:40px ;
         .input-group{
             margin: auto; 
-            height: 70px;
+          
             .looking{
                 border-top-left-radius: 30px;
                 border-bottom-left-radius: 30px;
                 padding: 30px;
-                height: 100px;
+                height: 70px;
             }
         }
         .send{
@@ -49,4 +49,54 @@
             }
         }
     }
+}
+
+@media screen and (max-width:375px){
+    #subscribe{
+        .title{
+            span{
+                font-size: 22px;
+            }
+            h1{
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        .input{
+            .input-group{
+                position: relative;
+                .looking{
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    position: absolute;
+                    top: -11px;
+                    right: -50px;
+                    height: 20px ;
+                    width: 260px ;
+                    padding: 15px;
+                }
+            }
+            .send{
+                position: relative;
+                .send-btn{
+                 position: absolute;
+                 border-top-left-radius: 30px;
+                 border-bottom-left-radius: 30px;
+                 top: 30px;
+                 left: 20px;
+                 padding: 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:540px){
+    
+}
+@media screen and (max-width:720px){
+    
+}
+
+@media screen and (max-width:990px){
+
 }

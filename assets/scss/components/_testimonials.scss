@@ -78,3 +78,59 @@
     }
     
 }
+@media screen and (max-width:375px){
+#testimonials{
+    .title{
+        span{
+            font-size: 22px;
+        }
+        h1{
+            font-size: 20px;
+        }
+    }
+    .testimonial{
+        .testimonial-review{
+            padding-left: 0px;
+            p{
+                font-size: 15px;
+                padding-right:0px ;
+            }
+        }
+        .testimonial-founder{
+            position: relative;
+            .founder-image{
+                position: relative;
+                img{
+                   margin-left: 20%;
+                }
+            }
+            .founder-about{
+                position: relative;
+                h5{
+                    top: -50px;
+                    position: absolute;
+                    left: 52%;
+                    bottom: 25px;
+                    font-size: 20px;
+                }
+                span{
+                    position: absolute;
+                    left: 52%;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+    
+}
+}
+@media screen and (max-width:540px){
+    
+}
+@media screen and (max-width:720px){
+    
+}
+
+@media screen and (max-width:990px){
+
+}

@@ -69,12 +69,14 @@
         }
     }
 }
-@media screen and (max-width:320px){
-    // #ourblog{
-    //     .card-blog{
-    //         text-align: center;
-    //     }
-    // }
+@media screen and (max-width:375px){
+    #ourblog{
+        .title{
+            h1{
+                font-size: 28px;
+            }
+        }
+    }
 }
 @media screen and (max-width:540px){
     

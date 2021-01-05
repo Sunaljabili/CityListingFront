@@ -1,7 +1,7 @@
 #footer-area {
   background-image: url("../img/gallery/footer_bg.jpg");
   background-repeat: no-repeat;
-  min-height: 650px;
+  min-height: 550px;
 }
 
 #footer-area .footer-content {
@@ -101,9 +101,16 @@
   font-size: 22px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   #footer-area {
-    width: 100%;
+    width: 310px;
+    height: 100%;
+  }
+  #footer-area .footer-content {
+    padding-top: 35px;
+  }
+  #footer-area .footer-content .app-img .download-app1-images img {
+    width: 100px;
   }
 }
 
@@ -323,14 +330,13 @@
 
 #subscribe .input .input-group {
   margin: auto;
-  height: 70px;
 }
 
 #subscribe .input .input-group .looking {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   padding: 30px;
-  height: 100px;
+  height: 70px;
 }
 
 #subscribe .input .send {
@@ -343,6 +349,40 @@
   border-color: #ff3d1c;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  #subscribe .title span {
+    font-size: 22px;
+  }
+  #subscribe .title h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #subscribe .input .input-group {
+    position: relative;
+  }
+  #subscribe .input .input-group .looking {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    top: -11px;
+    right: -50px;
+    height: 20px;
+    width: 260px;
+    padding: 15px;
+  }
+  #subscribe .input .send {
+    position: relative;
+  }
+  #subscribe .input .send .send-btn {
+    position: absolute;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    top: 30px;
+    left: 20px;
+    padding: 5px;
+  }
 }
 
 #testimonials .title span {
@@ -434,6 +474,46 @@
   line-height: 1.5;
 }
 
+@media screen and (max-width: 375px) {
+  #testimonials .title span {
+    font-size: 22px;
+  }
+  #testimonials .title h1 {
+    font-size: 20px;
+  }
+  #testimonials .testimonial .testimonial-review {
+    padding-left: 0px;
+  }
+  #testimonials .testimonial .testimonial-review p {
+    font-size: 15px;
+    padding-right: 0px;
+  }
+  #testimonials .testimonial .testimonial-founder {
+    position: relative;
+  }
+  #testimonials .testimonial .testimonial-founder .founder-image {
+    position: relative;
+  }
+  #testimonials .testimonial .testimonial-founder .founder-image img {
+    margin-left: 20%;
+  }
+  #testimonials .testimonial .testimonial-founder .founder-about {
+    position: relative;
+  }
+  #testimonials .testimonial .testimonial-founder .founder-about h5 {
+    top: -50px;
+    position: absolute;
+    left: 52%;
+    bottom: 25px;
+    font-size: 20px;
+  }
+  #testimonials .testimonial .testimonial-founder .founder-about span {
+    position: absolute;
+    left: 52%;
+    bottom: 0px;
+  }
+}
+
 #ourblog .title span {
   margin-top: 40px;
   font-size: 30px;
@@ -502,6 +582,12 @@
   color: #57667e;
   font-size: 16px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  #ourblog .title h1 {
+    font-size: 28px;
+  }
 }
 
 #offering {
@@ -788,6 +874,135 @@
   line-height: 30px;
   margin-bottom: 15px;
   font-weight: normal;
+}
+
+#add-listing .listing-detail .description h5 {
+  margin-bottom: 20px;
+  color: #1c1930;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#add-listing .listing-detail .description p {
+  font-family: "Sulphur Point", sans-serif;
+  color: #10285d;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#add-listing .location-details h5 {
+  margin-bottom: 20px;
+  color: #1c1930;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#add-listing .send_form .button-contact .btn {
+  font-size: 14px;
+  color: #eb566c;
+  background-color: #fff;
+  border: 1px solid #eb566c;
+  padding: 18px 44px;
+  letter-spacing: 3px;
+  font-family: "Sulphur Point", sans-serif;
+  margin-left: 5px;
+  border-radius: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  outline: none !important;
+}
+
+#add-listing .send_form .button-contact .btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #eb566c;
+}
+
+@media screen and (max-width: 375px) {
+  #add-listing .listing-detail .description p {
+    text-align: center;
+  }
+  #add-listing .location-details p .map_x {
+    width: 310px;
+    margin-left: 0px;
+    padding-left: 0px;
+    left: 0px;
+  }
+}
+
+#listing-details .listinig-card .card {
+  width: 352px;
+}
+
+#listing-details .listinig-card .card .img {
+  overflow: hidden;
+}
+
+#listing-details .listinig-card .card .img img {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#listing-details .listinig-card .card .img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+#listing-details .listinig-card .card .card-body {
+  position: relative;
+}
+
+#listing-details .listinig-card .card .card-body .btn {
+  background-color: #ff3d1c;
+  border: 1px solid #ff3d1c;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3px 25px;
+  position: absolute;
+  left: 225px;
+  top: -16px;
+}
+
+#listing-details .listinig-card .card .card-body .card-title a {
+  color: #1c1930;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+#listing-details .listinig-card .card .card-body .card-text {
+  color: #57667e;
+  padding-right: 50px;
+}
+
+#listing-details .listinig-card .card .card-body span {
+  color: #727272;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 375px) {
+  #listing-details .listinig-card .card {
+    width: 300px !important;
+  }
+  #listing-details .listinig-card .card .img {
+    width: 300px;
+  }
+  #listing-details .listinig-card .card .img img {
+    width: 300px;
+  }
+  #listing-details .listinig-card .card .card-body .btn {
+    left: 20px;
+  }
+  #listing-details .listinig-card .card .card-body .card-text {
+    padding-right: 0px;
+  }
 }
 
 #intro {
