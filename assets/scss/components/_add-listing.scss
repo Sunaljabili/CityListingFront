@@ -25,7 +25,9 @@
             font-size: 25px;
         }
         p{
-
+          .map_x{
+             width: 100%;;
+          }
         }
     }
     .send_form{
@@ -66,7 +68,7 @@
         .location-details{
             p{
                 .map_x{
-                    width: 310px;
+                    width: 310px !important;
                     margin-left: 0px;
                     padding-left: 0px;
                     left: 0px;
