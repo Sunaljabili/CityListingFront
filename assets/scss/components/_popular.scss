@@ -17,10 +17,17 @@
     }
    .single-card{
        position: relative;
-       &:hover .location-city-count{
-            transform: scaleY(1.2);
-            transition: 2s;
-        
+      
+       &:hover .location-country{
+           h1{
+               bottom: 60px;
+               transition: 1s;
+           }
+           .location-city-count{
+              bottom: 20px;
+              opacity: 1;
+              transition: 1s;
+           }
        }
        .image-card{
            overflow: hidden;
@@ -37,43 +44,46 @@
            }
        }
        .location-country{
+        
            h1{
                  position: absolute;
                  bottom: 20px;
                  left: 20px;
                  color: $color-white;
-
+                 transition: all 1s;
            }
-          
-       }
-       .location-move{
-          transform: scaleY(0);
-          .location-city-count{
-            display: inline-block;
-          
-           transform-origin: bottom;
-           position: absolute;
-        //    left: 20px;
-           @extend %btn-location-extend;
+            .location-city-count{
+                transition: all 1s;
+                 position: absolute;
+                 bottom: 0px;
+                 left: 18px;
+                 bottom: -20px;
+                 opacity: 0;
+                
+                
               a{
                   text-decoration: none;
-                  color: $color-white;
-                 
-                  
+                  @extend %btn-location-extend;
+                  &:hover{
+                      color:  $color-white;
+                      background-color: $color-secondary;
+                      transition: 1s;
+                  }
               } 
-    } 
+          }
        }
-    
-   }
+    }
 }
 
 %btn-location-extend{
-    color: $color-white;
-    background-color:  $color-secondary;
-    padding: 8px 18px;
+    color: $color-secondary;
+    background-color: $color-white;
+    padding: 12px 22px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius:15px;
-    
+    &:hover{
+
+    }
 }

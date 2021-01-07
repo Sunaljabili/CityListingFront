@@ -303,11 +303,17 @@ header.is-sticky .navbar {
   position: relative;
 }
 
-#popular .single-card:hover .location-city-count {
-  -webkit-transform: scaleY(1.2);
-          transform: scaleY(1.2);
-  -webkit-transition: 2s;
-  transition: 2s;
+#popular .single-card:hover .location-country h1 {
+  bottom: 60px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#popular .single-card:hover .location-country .location-city-count {
+  bottom: 20px;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 #popular .single-card .image-card {
@@ -335,29 +341,35 @@ header.is-sticky .navbar {
   bottom: 20px;
   left: 20px;
   color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-#popular .single-card .location-move {
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
-}
-
-#popular .single-card .location-move .location-city-count {
-  display: inline-block;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+#popular .single-card .location-country .location-city-count {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   position: absolute;
+  bottom: 0px;
+  left: 18px;
+  bottom: -20px;
+  opacity: 0;
 }
 
-#popular .single-card .location-move .location-city-count a {
+#popular .single-card .location-country .location-city-count a {
   text-decoration: none;
-  color: #fff;
 }
 
-#popular .single-card .location-move .location-city-count {
+#popular .single-card .location-country .location-city-count a:hover {
   color: #fff;
   background-color: #eb566c;
-  padding: 8px 18px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#popular .single-card .location-country .location-city-count a {
+  color: #eb566c;
+  background-color: #fff;
+  padding: 12px 22px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
