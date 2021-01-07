@@ -22,7 +22,14 @@ $(document).ready(function(){
     }
 // TESTIMONIAL SLICK PLUGIN END
       
-$("#ex2").slider({});
+
+$(window).scroll(function(){
+  if($("html").scrollTop() >300){
+    $("header").addClass("is-sticky");
+  }else{
+    $("header").removeClass("is-sticky");
+  }
+})
 
 
 });

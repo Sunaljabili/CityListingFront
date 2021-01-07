@@ -1,6 +1,7 @@
 #intro{
   background-image: url('../img/slider/slider-img.jpg');
   position: relative;
+ 
   &::after{
     position: absolute;
     content: '';
@@ -27,24 +28,59 @@
        color: $color-white;
        font-size: 78px;
       }
+
       .search-box{
+        margin: auto;
+        margin-top: 30px;
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-between;
           border-radius: 50px;
           border: 8px solid rgba(255, 255, 255, 0.2);
-          .inpt-grb{
-            input{
-                width: 45%;
+          height: 70px;
+          width: 700px;
+          .input-group{
+            .form-control{
+                width: 200px;
+                height: 55px;
                 border-top-left-radius: 50px;
                 border-bottom-left-radius: 50px;
                 position: relative;
                }
           }
+          .dropdown{
+            .btn-primary{
+              height: 55px;
+              width: 220px;
+              color: $color-black;
+              font-size: 16px;
+              background-color: $color-white;
+              border: 1px solid $color-white;
+              border-top-right-radius:0px ;
+              border-bottom-right-radius: 0px;
+            }
+          }
+          .btn {
+            height: 55px;
+            color: $color-white;
+            background-color: $color-primary;
+            border: 1px solid $color-primary;
+            width: 121px;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+
+          }
+
       
       }
      
   }
+}
+.navbar-toggler-icon{
+  background-color: wheat;
+  .fas{
+font-size: 10px;
+  }
+
 }
 @media screen and (max-width:990px){
 
@@ -59,8 +95,9 @@
 
 @media screen and (max-width:320px){
   #intro{
+    width: 700px;
     &::after{
-      width: 320px;
+      width: 700px;
     }
   }
 }

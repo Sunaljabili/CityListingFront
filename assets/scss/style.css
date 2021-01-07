@@ -1,6 +1,25 @@
+header {
+  position: absolute;
+  top: 20px;
+  z-index: 99;
+  width: 100%;
+}
+
+header.is-sticky {
+  position: fixed;
+  top: 0;
+}
+
+header.is-sticky .navbar {
+  margin-top: 0px;
+  background-color: #1c1930;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
 #header .navbar {
   margin-right: 10px;
-  margin: 25px 0px;
+  margin: 0px 0px;
 }
 
 #header .navbar .navbar-collapse .navbar-nav .nav-item {
@@ -639,6 +658,7 @@
 }
 
 #offering .single-img .image {
+  width: 750px;
   margin-left: -15px;
   height: 950px;
 }
@@ -719,6 +739,7 @@
 }
 
 #explore {
+  background-image: url("../img/gallery/section_bg02.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1175,28 +1196,62 @@
 }
 
 #intro .slogan .search-box {
+  margin: auto;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   border-radius: 50px;
   border: 8px solid rgba(255, 255, 255, 0.2);
+  height: 70px;
+  width: 700px;
 }
 
-#intro .slogan .search-box .inpt-grb input {
-  width: 45%;
+#intro .slogan .search-box .input-group .form-control {
+  width: 200px;
+  height: 55px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   position: relative;
 }
 
+#intro .slogan .search-box .dropdown .btn-primary {
+  height: 55px;
+  width: 220px;
+  color: #1c1930;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#intro .slogan .search-box .btn {
+  height: 55px;
+  color: #fff;
+  background-color: #ff3d1c;
+  border: 1px solid #ff3d1c;
+  width: 121px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.navbar-toggler-icon {
+  background-color: wheat;
+}
+
+.navbar-toggler-icon .fas {
+  font-size: 10px;
+}
+
 @media screen and (max-width: 320px) {
+  #intro {
+    width: 700px;
+  }
   #intro::after {
-    width: 320px;
+    width: 700px;
   }
 }
 /*# sourceMappingURL=style.css.map */

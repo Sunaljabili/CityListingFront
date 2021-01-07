@@ -13,66 +13,66 @@
   <link rel="stylesheet" href="assets/scss/style.css">
 
   <title>Document</title>
+
 </head>
-<!-- fixed top  -->
 
 <body>
   <!-- HEADER ARE START -->
   <header>
-<!-- NAVBAR START -->
-<section id="header">
-  <nav class="navbar fixed-top navbar-expand-lg ">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo/logo.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- NAVBAR START -->
+    <section id="header">
+      <nav class="navbar  navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fas fa-line-columns"></i>
+            </span>
+          </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="listing.html">Listing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="add-listing.html">
-              <button type="button" class="btn btn-warning btn-special">
-                <i class="fal fa-plus"></i>
-                Add Listing</button>
-            </a>
-          </li>
-          <span class="navbar-text">
-            <i class="fal fa-user-alt"></i>
-            <a href="#">Sign in</a>
-            or
-            <a href="#">Register</a>
-          </span>
-        </ul>
-
-      </div>
-    </div>
-
-  </nav>
-</section>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listing.html">Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="add-listing.html">
+                  <button type="button" class="btn btn-warning btn-special">
+                    <i class="fal fa-plus"></i>
+                    Add Listing</button>
+                </a>
+              </li>
+              <span class="navbar-text">
+                <i class="fal fa-user-alt"></i>
+                <a href="#">Sign in</a>
+                or
+                <a href="#">Register</a>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
   </header>
-   <!-- HEADER ARE START -->
+  <!-- HEADER ARE START -->
 
 
   <!-- NAVBAR END -->
@@ -81,12 +81,16 @@
     <section id="intro">
       <div class="container">
         <div class="row">
-          <div class="slogan col-lg-11 offset-lg-1">
+          <div class="slogan col-lg-11 col-11 col-sm-11 col-md-11 offset-lg-1">
             <h4>Explore the city</h4>
             <h1>Discover Great Places</h1>
-            <form action="#" class="search-box">
-              <div class="input-group mb-3 inpt-grb w-50">
-                <input type="text" class="form-control " placeholder=" What are you looking for?">
+
+            <div class="form-elements">
+              <form action="#" class="search-box">
+
+                <div class="input-group mb-3  w-50">
+                  <input type="text" class="form-control inpt1" placeholder=" What are you looking for?">
+                </div>
                 <div class="dropdown">
                   <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -100,12 +104,11 @@
                     <a class="dropdown-item" href="#">Catagories Five</a>
                   </div>
                 </div>
-                <span class="input-group-text" id="basic-addon2">Search</span>
-              </div>
-            </form>
+                <button type="button" class="btn btn-danger">Search</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
     </section>
     <!-- INTRO SECTION END -->
 
