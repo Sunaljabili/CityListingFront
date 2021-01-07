@@ -3,13 +3,14 @@ header{
     top: 20px;
     z-index: 99;
     width: 100%;
+    transition: all 0.5s;
     &.is-sticky{
         position: fixed;
         top: 0;
+        transition: 0.5s;
         .navbar{
             margin-top: 0px;
             background-color: $color-black;
-            transition: 0.7s;
         }
       
     }
@@ -18,8 +19,6 @@ header{
     .navbar{
         margin-right: 10px;
         margin: 0px 0px;
-        
-    
         .navbar-collapse{
             .navbar-nav{
                 .nav-item{
@@ -58,6 +57,14 @@ header{
                 }
             }
         }
+    }
+}
+.navbar-toggler-icon{
+    color: white;
+    background-color: $color-black !important;
+    margin-right: 20px;
+    &:focus{
+        outline: none;
     }
 }
 

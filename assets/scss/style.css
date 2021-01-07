@@ -3,18 +3,20 @@ header {
   top: 20px;
   z-index: 99;
   width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 header.is-sticky {
   position: fixed;
   top: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header.is-sticky .navbar {
   margin-top: 0px;
   background-color: #1c1930;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
 }
 
 #header .navbar {
@@ -60,14 +62,23 @@ header.is-sticky .navbar {
   margin-right: 5px;
 }
 
+.navbar-toggler-icon {
+  color: white;
+  background-color: #1c1930 !important;
+  margin-right: 20px;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none;
+}
+
 #footer-area {
   background-image: url("../img/gallery/footer_bg.jpg");
-  background-repeat: no-repeat;
-  min-height: 550px;
+  min-height: 00px;
 }
 
 #footer-area .footer-content {
-  padding-top: 180px;
+  padding-top: 150px;
 }
 
 #footer-area .footer-content .footer-title h3 {
@@ -107,6 +118,10 @@ header.is-sticky .navbar {
 #footer-area .footer-content .app-img .download-app1-images {
   margin-left: 40px;
   margin-bottom: 25px;
+}
+
+#footer-area .footer-content .app-img .download-app1-images img {
+  width: 150px;
 }
 
 #footer-area .footer-content .footer-line {
@@ -163,16 +178,12 @@ header.is-sticky .navbar {
   font-size: 22px;
 }
 
-@media screen and (max-width: 375px) {
-  #footer-area {
-    width: 310px;
-    height: 100%;
-  }
+@media screen and (max-width: 320px) {
   #footer-area .footer-content {
     padding-top: 35px;
   }
   #footer-area .footer-content .app-img .download-app1-images img {
-    width: 100px;
+    width: 90px !important;
   }
 }
 
@@ -855,6 +866,49 @@ header.is-sticky .navbar {
   }
 }
 
+#intro-page {
+  background-image: url("../img/hero/hero2.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+#intro-page::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 1, 2, 0.4);
+}
+
+#intro-page .title-page {
+  margin: auto;
+  padding: 230px 0px;
+  z-index: 99;
+}
+
+#intro-page .title-page h2 {
+  color: #fff;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  #intro-page {
+    width: 320px;
+  }
+  #map .map_x {
+    width: 100% !important;
+  }
+}
+
+#map .map_x {
+  width: 100%;
+}
+
 #get_in_touch .send_form .button-contact .btn {
   font-size: 14px;
   color: #eb566c;
@@ -906,6 +960,12 @@ header.is-sticky .navbar {
   color: #8a8a8a;
   font-size: 15px;
   margin-left: 75px;
+}
+
+@media screen and (max-width: 320px) {
+  #get_in_touch .contact-info {
+    margin-left: 19px;
+  }
 }
 
 #ourcompany .company-about .company-title h3 {
