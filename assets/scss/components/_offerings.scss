@@ -45,7 +45,6 @@
             line-height: 1.6;
             color: $color-sub-title;
             font-size: $text-font-size;
-            // padding-right: 120px;
           }
 
       }
@@ -92,7 +91,25 @@
   #offering{
     .single-img{
       .image{
-        width: 320px;
+       display: none;
+      }
+    }
+    .travel{
+      padding-left: 0px;
+      text-align: center;
+      align-items: center;
+      .travel-about{
+        span{
+          font-size: 20px;
+          margin-left: 22px;
+          padding-top: 30px;
+        }
+        h3{
+          padding-right: 0px;
+        }
+        p{
+
+        }
       }
     }
   }

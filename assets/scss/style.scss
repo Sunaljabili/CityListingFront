@@ -16,20 +16,23 @@
 @import"components/intro-page";
 @import "components/map";
 
+// Login
+@import "components/login";
+
 // Contact Page
 @import"components/touch";
 
 // About Page
 @import"components/ourcompany";
 
-// Add Listing Page
+// Listing Page
 @import "components/add-listing";
 @import"components/listing-details";
-
-// Create Listing Page
 @import "components/create-listings";
 
+// Blog Page
 
+@import "components/blog-details";
 
 
 //Pages SCSS

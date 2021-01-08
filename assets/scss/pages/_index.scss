@@ -1,7 +1,8 @@
 #intro{
   background-image: url('../img/slider/slider-img.jpg');
+  background-repeat: no-repeat;
   position: relative;
- 
+  width: 100%;
   &::after{
     position: absolute;
     content: '';
@@ -40,7 +41,7 @@
           width: 700px;
           .input-group{
             .form-control{
-                width: 200px;
+                width: 350px;
                 height: 55px;
                 border-top-left-radius: 50px;
                 border-bottom-left-radius: 50px;
@@ -78,26 +79,52 @@
 .navbar-toggler-icon{
   background-color: wheat;
   .fas{
-font-size: 10px;
+    font-size: 10px;
   }
 
 }
-@media screen and (max-width:990px){
 
+@media screen and (max-width:990px){
+ 
 }
 @media screen and (max-width:720px){
     
 }
 
 @media screen and (max-width:540px){
-    
+   #intro{
+     width:600px;
+   } 
 }
-
 @media screen and (max-width:320px){
   #intro{
-    width: 700px;
+    width: 320px;
+   height: 750px;
     &::after{
-      width: 700px;
+      width: 320px;
+      .slogan{
+
+        .form-elements{
+          .search-box{
+            .input-group{
+              .form-control{
+                width: 100px !important;
+              }
+            
+            }
+            .dropdown{
+              .btn{
+                width: 100px;
+              }
+            
+            }
+            .btn{
+              width: 33%;
+            }
+          }
+        
+        }
+      }
     }
   }
 }

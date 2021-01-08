@@ -757,7 +757,22 @@ header.is-sticky .navbar {
 
 @media screen and (max-width: 320px) {
   #offering .single-img .image {
-    width: 320px;
+    display: none;
+  }
+  #offering .travel {
+    padding-left: 0px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #offering .travel .travel-about span {
+    font-size: 20px;
+    margin-left: 22px;
+    padding-top: 30px;
+  }
+  #offering .travel .travel-about h3 {
+    padding-right: 0px;
   }
 }
 
@@ -873,8 +888,8 @@ header.is-sticky .navbar {
 }
 
 @media screen and (max-width: 320px) {
-  #explore .services img {
-    display: none;
+  #explore .services .services-text {
+    margin-right: 0px;
   }
 }
 
@@ -1233,7 +1248,9 @@ header.is-sticky .navbar {
 
 #intro {
   background-image: url("../img/slider/slider-img.jpg");
+  background-repeat: no-repeat;
   position: relative;
+  width: 100%;
 }
 
 #intro::after {
@@ -1282,7 +1299,7 @@ header.is-sticky .navbar {
 }
 
 #intro .slogan .search-box .input-group .form-control {
-  width: 200px;
+  width: 350px;
   height: 55px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -1318,12 +1335,28 @@ header.is-sticky .navbar {
   font-size: 10px;
 }
 
+@media screen and (max-width: 540px) {
+  #intro {
+    width: 600px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   #intro {
-    width: 700px;
+    width: 320px;
+    height: 750px;
   }
   #intro::after {
-    width: 700px;
+    width: 320px;
+  }
+  #intro::after .slogan .form-elements .search-box .input-group .form-control {
+    width: 100px !important;
+  }
+  #intro::after .slogan .form-elements .search-box .dropdown .btn {
+    width: 100px;
+  }
+  #intro::after .slogan .form-elements .search-box .btn {
+    width: 33%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -110,10 +110,13 @@
   @media screen and (max-width:320px){
     #explore{
       .services{
-        img{
-          display: none;
+     
+          .services-text{
+            margin-right: 0px;
+          }
+
         }
       }
     }
-  }
+  
   
