@@ -1435,9 +1435,319 @@ header.is-sticky .navbar {
   border-bottom: 1px solid #f0e9ff;
 }
 
-#blog-details .container .row {
-  margin: 0px !important;
-  padding: 0px !important;
+#blog-area .tap-cloud ul li {
+  border: 1px solid  #f0e9ff;
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+#blog-area .tap-cloud ul li:hover {
+  background-color: #eb566c;
+}
+
+#blog-area .tap-cloud ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #888888;
+}
+
+#blog-area .tap-cloud ul li a:hover {
+  color: #fff;
+}
+
+#blog-area .instagram-feeds h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e9ff;
+}
+
+#blog-area .instagram-feeds .img ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#blog-area .instagram-feeds .img ul li {
+  width: 33.33%;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+#blog-area .instagram-feeds .img ul li a {
+  text-decoration: none;
+}
+
+#blog-area .newsletter h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e9ff;
+}
+
+#blog-details {
+  width: 100%;
+}
+
+#blog-details .blog-post {
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+#blog-details .blog-post .posting {
+  position: relative;
+}
+
+#blog-details .blog-post .posting .date-time span {
+  background-color: #eb566c;
+  color: #fff;
+  padding: 25px 9px;
+  font-size: 20px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -33px;
+  left: 35px;
+}
+
+#blog-details .blog-post .posting-title .blog-title {
+  margin-bottom: 30px;
+}
+
+#blog-details .blog-post .posting-title .blog-title a {
+  text-decoration: none;
+}
+
+#blog-details .blog-post .posting-title .blog-title a h4 {
+  color: #242b5e;
+  font-size: 26px;
+}
+
+#blog-details .blog-post .posting-title .blog-description p {
+  font-family: "Sulphur Point",sans-serif;
+  color: #10285d;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+#blog-details .blog-post .posting-title .blog-comment span:hover .fal {
+  color: #eb566c;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#blog-details .blog-post .posting-title .blog-comment span .fal {
+  color: #999999;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#blog-details .blog-post .posting-title .blog-comment span a {
+  color: #999999;
+  text-decoration: none;
+}
+
+#blog-details .blog-post .posting-title .blog-comment span a:hover {
+  color: #eb566c;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#blog-details .search .input-group {
+  height: 45px;
+}
+
+#blog-details .search .input-group .input-group-text {
+  background-color: #eb566c;
+  color: #fff;
+}
+
+#blog-details .search .input-group input {
+  height: 45px;
+}
+
+#blog-details .search .btn {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  color: #eb566c;
+  border: 1px solid #eb566c;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#blog-details .search .btn:hover {
+  background-color: #eb566c;
+  color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#blog-details .category h4 {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#blog-details .category ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#blog-details .category ul .list-elemt {
+  list-style-type: none;
+  border-bottom: 1px solid #f0e9ff;
+  padding: 20px 30px;
+}
+
+#blog-details .category ul .list-elemt a {
+  text-decoration: none;
+}
+
+#blog-details .category ul .list-elemt a span {
+  color: #57667e;
+}
+
+#blog-details .category ul .list-elemt a span:hover {
+  color: #eb566c;
+}
+
+#blog-details .recent-post h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e9ff;
+}
+
+#blog-details .recent-post .post-item {
+  margin-top: 20px;
+}
+
+#blog-details .recent-post .post-item .post-body {
+  padding-left: 20px;
+  position: relative;
+}
+
+#blog-details .recent-post .post-item .post-body a {
+  text-decoration: none;
+}
+
+#blog-details .recent-post .post-item .post-body a span {
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  bottom: 50px;
+  left: 95px;
+  color: #1c1930;
+}
+
+#blog-details .recent-post .post-item .post-body a span:hover {
+  color: #eb566c;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#blog-details .recent-post .post-item .post-body p {
+  position: absolute;
+  bottom: 3px;
+  left: 95px;
+  color: #10285D;
+}
+
+#blog-details .tap-cloud h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e9ff;
+}
+
+#blog-details .tap-cloud ul li {
+  border: 1px solid  #f0e9ff;
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+#blog-details .tap-cloud ul li:hover {
+  background-color: #eb566c;
+}
+
+#blog-details .tap-cloud ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #888888;
+}
+
+#blog-details .tap-cloud ul li a:hover {
+  color: #fff;
+}
+
+#blog-details .instagram-feeds h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e9ff;
+}
+
+#blog-details .instagram-feeds .img ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+#blog-details .instagram-feeds .img ul li {
+  width: 33.33%;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+#blog-details .instagram-feeds .img ul li a {
+  text-decoration: none;
+}
+
+#blog-details .newsletter h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: "Sulphur Point", sans-serif;
+  color: #1c1930;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid #f0e9ff;
 }
 
 #intro {
