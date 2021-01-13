@@ -63,6 +63,47 @@ width: 100%;
             }
         }
 
+        .txt{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .quote-wrapper{
+            background: rgba(130,139,178,0.1);
+            padding: 15px;
+            line-height: 1.733;
+            color: #888888;
+            font-style: italic;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            .quote{
+                background: #fff;
+                padding: 15px 15px 15px 20px;
+                border-left: 2px solid;
+            }
+        }
+
+      }
+      .socail-media{
+          position: relative;
+          .like-about{
+              .like-left{
+
+              }
+              .like-right{
+
+                  position: absolute;
+                  ul{
+                      li{
+                          font-size: 20px;
+                          list-style-type: none;
+                          a{
+                              text-decoration: none;
+                          }
+                      }
+                  }
+              }
+          }
       }
   
     }

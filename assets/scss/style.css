@@ -283,6 +283,10 @@ header.is-sticky .navbar {
   color: #10285d;
 }
 
+#popular {
+  width: 100%;
+}
+
 #popular .title span {
   font-size: 30px;
   font-weight: 700;
@@ -374,6 +378,12 @@ header.is-sticky .navbar {
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 375px) {
+  #popular .title {
+    text-align: center;
+  }
 }
 
 #subscribe {
@@ -753,6 +763,12 @@ header.is-sticky .navbar {
 #offering .travel .travel-categories .travel-about p {
   color: #677294;
   font-size: 16px;
+}
+
+@media screen and (max-width: 540px) {
+  #offering .single-img .image {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1563,6 +1579,45 @@ header.is-sticky .navbar {
   transition: 1s;
 }
 
+#blog-details .blog-post .posting-title .txt {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#blog-details .blog-post .posting-title .quote-wrapper {
+  background: rgba(130, 139, 178, 0.1);
+  padding: 15px;
+  line-height: 1.733;
+  color: #888888;
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#blog-details .blog-post .posting-title .quote-wrapper .quote {
+  background: #fff;
+  padding: 15px 15px 15px 20px;
+  border-left: 2px solid;
+}
+
+#blog-details .blog-post .socail-media {
+  position: relative;
+}
+
+#blog-details .blog-post .socail-media .like-about .like-right {
+  position: absolute;
+}
+
+#blog-details .blog-post .socail-media .like-about .like-right ul li {
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#blog-details .blog-post .socail-media .like-about .like-right ul li a {
+  text-decoration: none;
+}
+
 #blog-details .search .input-group {
   height: 45px;
 }
@@ -1799,20 +1854,28 @@ header.is-sticky .navbar {
   border-radius: 50px;
   border: 8px solid rgba(255, 255, 255, 0.2);
   height: 70px;
-  width: 700px;
-}
-
-#intro .slogan .search-box .input-group .form-control {
-  width: 350px;
-  height: 55px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  width: 650px;
   position: relative;
 }
 
-#intro .slogan .search-box .dropdown .btn-primary {
+#intro .slogan .search-box .input-group {
+  width: 230px;
+}
+
+#intro .slogan .search-box .input-group .form-control {
   height: 55px;
-  width: 220px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+#intro .slogan .search-box .dropdown {
+  position: absolute;
+  left: 138px;
+}
+
+#intro .slogan .search-box .dropdown .btn-primary {
+  width: 250px;
+  height: 55px;
   color: #1c1930;
   font-size: 16px;
   background-color: #fff;
@@ -1821,12 +1884,17 @@ header.is-sticky .navbar {
   border-bottom-right-radius: 0px;
 }
 
-#intro .slogan .search-box .btn {
+#intro .slogan .search-box .btn-search {
+  position: absolute;
+  left: 282px;
+}
+
+#intro .slogan .search-box .btn-search .btn {
   height: 55px;
   color: #fff;
   background-color: #ff3d1c;
   border: 1px solid #ff3d1c;
-  width: 121px;
+  width: 153px;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
 }
@@ -1839,28 +1907,89 @@ header.is-sticky .navbar {
   font-size: 10px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   #intro {
-    width: 600px;
+    width: 768px;
+  }
+  #intro h1 {
+    display: none;
+  }
+  #intro .slogan .form-elements {
+    position: relative;
+  }
+  #intro .slogan .form-elements .search-box {
+    border: none;
+  }
+  #intro .slogan .form-elements .search-box .input-group {
+    position: absolute;
+    left: 180px;
+    width: 250px;
+  }
+  #intro .slogan .form-elements .search-box .input-group input {
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  #intro .slogan .form-elements .search-box .dropdown {
+    position: absolute;
+    top: 60px;
+    left: 180px;
+  }
+  #intro .slogan .form-elements .search-box .btn-search {
+    position: absolute;
+    top: 118px;
+    left: 180px;
+  }
+  #intro .slogan .form-elements .search-box .btn-search .btn {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 250px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) and (max-width: 540px) {
+  #intro {
+    width: 520px;
+  }
+}
+
+@media screen and (max-width: 768px) and (max-width: 375px) {
   #intro {
     width: 320px;
-    height: 750px;
   }
-  #intro::after {
-    width: 320px;
+  #intro h1 {
+    display: none;
   }
-  #intro::after .slogan .form-elements .search-box .input-group .form-control {
-    width: 100px !important;
+  #intro .slogan .form-elements {
+    position: relative;
   }
-  #intro::after .slogan .form-elements .search-box .dropdown .btn {
-    width: 100px;
+  #intro .slogan .form-elements .search-box {
+    border: none;
   }
-  #intro::after .slogan .form-elements .search-box .btn {
-    width: 33%;
+  #intro .slogan .form-elements .search-box .input-group {
+    position: absolute;
+    left: 40px;
+    width: 250px;
+  }
+  #intro .slogan .form-elements .search-box .input-group input {
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  #intro .slogan .form-elements .search-box .dropdown {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+  }
+  #intro .slogan .form-elements .search-box .btn-search {
+    position: absolute;
+    top: 118px;
+    left: 40px;
+  }
+  #intro .slogan .form-elements .search-box .btn-search .btn {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- BOOTSTRAP 4.5.3 Version CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+
   <!-- SLICK PLUGIN CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
   <!-- BASE  SASS  -->
   <link rel="stylesheet" href="assets/scss/style.css">
 
-  <title>Document</title>
+  <title>City Listing</title>
 
 </head>
 
@@ -32,7 +34,6 @@
               <i class="far fa-bars"></i>
             </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
@@ -75,6 +76,8 @@
   <!-- HEADER ARE START -->
 
   <!-- NAVBAR END -->
+
+  <!-- MAIN AREA START -->
   <main>
     <!-- INTRO SECTION START -->
     <section id="intro">
@@ -84,26 +87,35 @@
             <h4>Explore the city</h4>
             <h1>Discover Great Places</h1>
 
-            <div class="form-elements">
+            <div class="form-elements d-flex flex-wrap">
               <form action="#" class="search-box">
-
-                <div class="input-group mb-3  w-50">
-                  <input type="text" class="form-control inpt1" placeholder=" What are you looking for?">
-                </div>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    All Catagories
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Catagories One</a>
-                    <a class="dropdown-item" href="#">Catagories Two</a>
-                    <a class="dropdown-item" href="#">Catagories Three</a>
-                    <a class="dropdown-item" href="#">Catagories Four</a>
-                    <a class="dropdown-item" href="#">Catagories Five</a>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-12">
+                    <div class="input-group ">
+                      <input type="text" class="form-control inpt1" placeholder=" What are you looking for?">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-12">
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All Catagories
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Catagories One</a>
+                        <a class="dropdown-item" href="#">Catagories Two</a>
+                        <a class="dropdown-item" href="#">Catagories Three</a>
+                        <a class="dropdown-item" href="#">Catagories Four</a>
+                        <a class="dropdown-item" href="#">Catagories Five</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-12 ">
+                    <div class="btn-search">
+                      <button type="button" class="btn btn-danger">Search</button>
+                    </div>
                   </div>
                 </div>
-                <button type="button" class="btn btn-danger">Search</button>
               </form>
             </div>
           </div>
@@ -543,6 +555,7 @@
     </section>
     <!-- OUR BLOG SECTION END -->
   </main>
+  <!-- MAIN AREA END -->
 
   <!-- FOOTER AREA START -->
   <footer>
@@ -645,7 +658,8 @@
     <!-- FOOTER AREA END -->
 
   </footer>
- <!-- FOOTER AREA START -->
+  <!-- FOOTER AREA START -->
+
 
   <!-- PRO FONT AWESOME LINK -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css">

@@ -1,4 +1,5 @@
 #popular{
+    width: 100%;
     .title{
         span{
             font-size: 30px;
@@ -83,7 +84,22 @@
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-right-radius:15px;
-    &:hover{
+   
+}
+@media screen and (max-width:990px){
+ 
+}
+@media screen and (max-width:720px){
+    
+}
 
-    }
+@media screen and (max-width:540px){
+
+}
+@media screen and (max-width:375px){
+  #popular{
+      .title{
+          text-align: center;
+      }
+  }
 }

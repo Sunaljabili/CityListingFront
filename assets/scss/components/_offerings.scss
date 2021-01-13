@@ -84,7 +84,13 @@
 }
 
 @media screen and (max-width:540px){
-    
+  #offering{
+    .single-img{
+      .image{
+       display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width:320px){
