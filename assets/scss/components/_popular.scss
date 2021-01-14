@@ -74,12 +74,41 @@
           }
        }
     }
+    .button{
+        margin: auto;
+        margin-top: 25px;
+        .btn{
+            background-color: $color-primary;
+            text-transform: uppercase;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius:15px;
+            border: 1px solid $color-primary;
+            padding: 12px 22px;
+            transition: all 0.3s;
+            a{
+                text-decoration: none;
+                color: $color-white;
+            }
+            &:focus{
+                background: none;
+                outline: none;
+                border: none;
+            }
+            &:hover{
+                background-color: $color-secondary;
+                border: 1px solid $color-secondary;
+                transition: 0.3s;
+            }
+        }
+    }
 }
 
 %btn-location-extend{
     color: $color-secondary;
     background-color: $color-white;
-    padding: 12px 22px;
+  
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;

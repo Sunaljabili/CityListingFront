@@ -369,10 +369,45 @@ header.is-sticky .navbar {
   transition: 1s;
 }
 
+#popular .button {
+  margin: auto;
+  margin-top: 25px;
+}
+
+#popular .button .btn {
+  background-color: #ff3d1c;
+  text-transform: uppercase;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid #ff3d1c;
+  padding: 12px 22px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#popular .button .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#popular .button .btn:focus {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#popular .button .btn:hover {
+  background-color: #eb566c;
+  border: 1px solid #eb566c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 #popular .single-card .location-country .location-city-count a {
   color: #eb566c;
   background-color: #fff;
-  padding: 12px 22px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
