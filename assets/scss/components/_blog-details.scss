@@ -87,17 +87,17 @@ width: 100%;
       .socail-media{
           position: relative;
           .like-about{
-              .like-left{
-
-              }
+              position: relative;
               .like-right{
-
+               left: 450px;
                   position: absolute;
                   ul{
                       li{
-                          font-size: 20px;
+                          padding: 5px;
+                          font-size: 22px;
                           list-style-type: none;
                           a{
+                            color: $color-gray;
                               text-decoration: none;
                           }
                       }
@@ -105,7 +105,72 @@ width: 100%;
               }
           }
       }
-  
+      .user{
+          .user-image{
+              position: relative;
+              img{
+              position: absolute;
+              top: -10px;
+              }
+          }
+          .user-desc{
+              .user-com{
+                    padding-left: 90px;
+                    margin-bottom: 10px;
+                    color: #777777;
+                    font-size: 15px;
+              }
+              .user-name {
+                  margin-top: 20px;
+                  span{
+                      display: inline-block;
+                      a{
+                          text-decoration: none;
+                          margin-top: 5px;
+                          color: #1c1930;
+                      }
+                      .date{
+                         display: inline-block;
+                         font-size: 14px;
+                         color: #999999;
+                         margin-bottom: 0;
+                         margin-left: 20px;
+                    }
+                  }
+                 
+              }
+          }
+          .reply-btn{
+              a{
+                  text-decoration: none;
+                  color: $color-gray;
+              }
+          }
+      }
+      .send_form{
+        .button-contact{  
+            .btn{
+                font-size: 14px;
+                color: $color-secondary;
+                background-color: $color-white;
+                border: 1px solid $color-secondary; 
+                padding: 18px 44px;
+                letter-spacing: 3px;
+                font-family: $primary-font;
+                margin-left: 5px;
+                border-radius: 0px;
+                transition: all 0.5s;
+                outline: none !important;
+
+                &:hover{
+                    transition: 0.5s;
+                    color: $color-white;
+                    background-color: $color-secondary;
+                }
+            }
+         
+        }
+    }
     }
 
 

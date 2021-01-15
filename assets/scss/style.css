@@ -1693,17 +1693,89 @@ header.is-sticky .navbar {
   position: relative;
 }
 
+#blog-details .blog-post .socail-media .like-about {
+  position: relative;
+}
+
 #blog-details .blog-post .socail-media .like-about .like-right {
+  left: 450px;
   position: absolute;
 }
 
 #blog-details .blog-post .socail-media .like-about .like-right ul li {
-  font-size: 20px;
+  padding: 5px;
+  font-size: 22px;
   list-style-type: none;
 }
 
 #blog-details .blog-post .socail-media .like-about .like-right ul li a {
+  color: #57667e;
   text-decoration: none;
+}
+
+#blog-details .blog-post .user .user-image {
+  position: relative;
+}
+
+#blog-details .blog-post .user .user-image img {
+  position: absolute;
+  top: -10px;
+}
+
+#blog-details .blog-post .user .user-desc .user-com {
+  padding-left: 90px;
+  margin-bottom: 10px;
+  color: #777777;
+  font-size: 15px;
+}
+
+#blog-details .blog-post .user .user-desc .user-name {
+  margin-top: 20px;
+}
+
+#blog-details .blog-post .user .user-desc .user-name span {
+  display: inline-block;
+}
+
+#blog-details .blog-post .user .user-desc .user-name span a {
+  text-decoration: none;
+  margin-top: 5px;
+  color: #1c1930;
+}
+
+#blog-details .blog-post .user .user-desc .user-name span .date {
+  display: inline-block;
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+#blog-details .blog-post .user .reply-btn a {
+  text-decoration: none;
+  color: #57667e;
+}
+
+#blog-details .blog-post .send_form .button-contact .btn {
+  font-size: 14px;
+  color: #eb566c;
+  background-color: #fff;
+  border: 1px solid #eb566c;
+  padding: 18px 44px;
+  letter-spacing: 3px;
+  font-family: "Sulphur Point", sans-serif;
+  margin-left: 5px;
+  border-radius: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  outline: none !important;
+}
+
+#blog-details .blog-post .send_form .button-contact .btn:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #eb566c;
 }
 
 #blog-details .search .input-group {
