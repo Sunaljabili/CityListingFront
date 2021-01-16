@@ -989,6 +989,25 @@ header.is-sticky .navbar {
   width: 100%;
 }
 
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  background-color: #eb566c;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid transparent;
+  -webkit-box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+          box-shadow: 0 0 10px 3px rgba(108, 98, 98, 0.2);
+  z-index: 999;
+  line-height: 45px;
+  display: none;
+  cursor: pointer;
+}
+
 #get_in_touch .send_form .button-contact .btn {
   font-size: 14px;
   color: #eb566c;
