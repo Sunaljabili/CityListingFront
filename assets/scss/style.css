@@ -360,6 +360,7 @@ header.is-sticky .navbar {
 
 #popular .single-card .location-country .location-city-count a {
   text-decoration: none;
+  padding: 12px;
 }
 
 #popular .single-card .location-country .location-city-count a:hover {
