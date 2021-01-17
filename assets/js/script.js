@@ -23,8 +23,6 @@ $(window).scroll(function(){
 // TESTIMONIAL SLICK PLUGIN END
       
 // TO-TOP BUTTON START
-
-
 $(window).scroll(function(){
 
   if($(this).scrollTop() > 300){
@@ -37,7 +35,16 @@ $(window).scroll(function(){
 $(".to-top").click(function(){
   $("html,body").animate({scrollTop:0},"slow")
 });
-
 // TO-TOP BUTTON END
+
+// Spinner LOAD  START
+
+$(window).on("load",function(){
+  $(".load").fadeOut(1000)
+  $("header").fadeIn(1000)
+  $("main").fadeIn(1000)
+  $("footer").fadeIn(1000)
+})
+// Spinner LOAD  END
 
 });
